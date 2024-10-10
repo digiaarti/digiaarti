@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: rgba(243, 196, 110, 0.247);
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: Yatra One;
+    font-size: 42px;
+}
+.line{
+    height: 3px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 198, 124, 0.219);
+    border-radius: 30px;
+}
+.daForm{
+    margin-top: 8%;
+    
+}
+form:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    z-index: 1;
+    cursor: pointer;
+}
+input{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.8);
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    &:focus{
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    ::placeholder{
+        color: rgba(0, 0, 0, 0.5);
+    }
+    @media screen and (max-width: 600px){
+        width: 80%;
+    }
+    @media screen and (max-width: 400px){
+        width: 100%;
+    }
+
+}
+input:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;    
+}
+#daBtn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    @media screen and (max-width: 600px){
+        padding: 8px 16px;
+    }
+}
+#daBtn:hover{
+    color: rgba(255, 255, 255, 0.699);
+    background-color: rgba(0, 0, 0, 0.541);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;    
+}
+#daBtn:disabled{
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: not-allowed;
+}
+textarea{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.8);
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    resize: vertical;
+}
+textarea:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+footer{
+    font-family: Kalam;
+    margin-left: 12px;
+}
+#daCopy{
+    font-weight: bolder;
+}
+#daP{
+    font-size: 20px;
+    background: -webkit-linear-gradient(#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+#daP:hover{
+    background: -webkit-linear-gradient(#f0826f, #e65b2f, #c93016, #9f2613, #681b0f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}

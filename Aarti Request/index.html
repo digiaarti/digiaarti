@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Aarti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Request a Aarti</h1>
+    <div class="line"></div>
+    <form action="https://api.web3forms.com/submit" method="POST" class="daForm ">
+        <input type="hidden" name="access_key" value="b2cc5b37-2883-4c7f-bd50-317e7346976f">    
+        <label for="name">Your Name</label><br>
+        <input type="text" name="name" maxlength="50" id="naam" class="daInput" required/><br>
+        <label for="no.">Your Mobile number</label><br>
+        <input type="tel" name="no" pattern="[0-9]{10}" id="mob" class="daInput" required/><br>
+        <label for="email">Your Email</label><br>
+        <input type="email" id="mail" class="daInput" required/><br>
+        <label for="request">Your Aarti Request</label><br>
+        <textarea name="request" id="request" rows="4" cols="50" class="daInput" required/></textarea><br>
+        <input type="submit" value="SUBMIT &rarr;" id="daBtn" style="font-weight: bold;"><br>
+        <a href="../index.html"><input type="button" value=" &larr; Go Back" id="daBtn"></a>
+    </form><br>
+    <div class="line"></div><br>
+    <footer>
+        <p id="daCopy">&copy; Designed and Developed by Gaurang Dalal</p>
+        <a href="https://instagram.com/127.0.0.1_gauraang"><p id="daP">Instagram</p></a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

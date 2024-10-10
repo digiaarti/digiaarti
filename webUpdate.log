@@ -1,0 +1,33 @@
+Index{
+    in version no., 'v00': represnts => Major Update Version;
+                    '.00': represnts => Minor Update Version;
+                    '.24': represnts => Updated Version Year;
+}
+
+
+version: v01.01.24(alpha){
+    Aarti Added;
+    https://digiaarti.github.io/digiaarti/;
+    result: PASSED;
+}
+
+version: v01.02.24(alpha){
+    Added custom domain;
+    http://digiaarti.in;
+    result: FAILED;
+}
+
+version: v01.03.24(alpha){
+    Restore to normal;
+    https://digiaarti.github.io/digiaarti/;
+    result: PASSED;
+}
+
+version: v02.01.24(beta){
+    Removed a Section(Removed);
+    Added more Aartis(completed);
+    Correcting Aarti Proof (Corrected);
+    Added Search Option(optional)(will not be get added ever);
+    https://digiaarti/github.io/digiaarti/;
+    result: PASSED;
+}

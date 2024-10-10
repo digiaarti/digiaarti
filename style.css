@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+:root{
+    --primary-color: rgba(243, 196, 110, 0.247);
+    --secondary-color:rgba(243, 196, 110, 0.301);
+    --tertiary-color: rgba(243, 196, 110, 0.5);
+    --quaternary-color: rgba(0,0,0,0.548);
+    --pentanary-color: black;
+    --font-family-primary: 'Kalam', sans-serif;
+    --font-family-secondary: 'Yatra One', sans-serif;
+}
+
+.darkTheme{
+    --primary-color: rgba(0, 0, 0, 0.774);
+    --secondary-color: rgba(0,0,0,0.301);
+    --tertiary-color: rgba(0,0,0,0.247);
+    --quaternary-color: rgba(243, 196, 110, 1);
+    --pentanary-color: white;
+    --font-family-primary: 'Kalam', sans-serif;
+    --font-family-secondary: 'Yatra One', sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: var(--pentanary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Kalam;
+}
+
+h1 {
+    color: var(--pentanary-color);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: Yatra One;
+    font-size: 42px;
+}
+
+.line {
+    height: 3px;
+    width: 100%;
+    background-color: var(--quaternary-color);
+}
+
+.daDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    height: 120px;
+    width: 350px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--pentanary-color);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+}
+
+.daDiv:hover {
+    background-color: var(--tertiary-color);
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+    z-index: 1;
+}
+
+#pics {
+    margin-top: -70px;
+    display: flex;
+    width: 100px;
+    margin-left: 220px;
+}
+
+#picss {
+    margin-top: -110px;
+    display: flex;
+    width: 90px;
+    margin-left: 220px;
+    mix-blend-mode: darken;
+}
+
+#picsss {
+    margin-top: -130px;
+    display: flex;
+    width: 125px;
+    margin-left: 210px;
+}
+
+#daText {
+    display: flex;
+    margin-right: 220px;
+    font-size: 20px;
+    margin-top: 40px;
+    font-weight: 549;
+}
+
+/* #daTextt {
+    display: flex;
+    margin-right: 210px;
+    font-size: 125.00vw;
+    margin-top: 20px;
+    font-weight: 549;
+} */
+
+#daTexttt {
+    font-family: Yatra One;
+    display: flex;
+    margin-right: 220px;
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: 549;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: var(--pentanary-color);
+}
+
+footer {
+    color: var(--pentanary-color);
+    font-family: Kalam;
+    margin-left: 12px;
+}
+
+#daCopy {
+    font-weight: bolder;
+}
+
+#daP {
+    font-size: 20px;
+    background: -webkit-linear-gradient(#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+#daP:hover {
+    background: -webkit-linear-gradient(#f0826f, #e65b2f, #c93016, #9f2613, #681b0f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+#moon{
+    width:35px;
+    mix-blend-mode: darken;
+}
+#moon:hover{
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.212);
+    transition: all ease .5s;
+}
+#moon{
+    display: block;
+    background: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3%;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+/* @media screen and (max-width: 600px){
+    .daDiv{
+        width: 100%;
+    }
+} */
