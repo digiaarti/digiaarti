@@ -59,6 +59,8 @@ form{
     padding: 20px;
     background-color: var(--form-bg);  /* Use variable */
     border-radius: 30px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .daForm{
     margin-top: 8%;
@@ -81,6 +83,8 @@ input{
     outline: none;
     font-size: 16px;
     letter-spacing: 1px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     &:focus{
@@ -119,8 +123,8 @@ input:hover{
     color: var(--color-tertiary);
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-    @media screen and (max-width: 600px){
-        padding: 8px 16px;
+    @media screen and (max-width: 800px){
+        width: 100%;
     }
 }
 #daBtn:hover{
@@ -128,6 +132,8 @@ input:hover{
     background-color: var(--color-secondary); /* Use variable */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease-in-out;    
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 #daBtn:disabled{
     background-color: rgba(255, 255, 255, 0.3);
@@ -159,6 +165,8 @@ footer{
     font-family: Kalam;
     margin-left: 12px;
     color: var(--color-tertiary);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 #daCopy{
     font-weight: bolder;
@@ -169,12 +177,16 @@ footer{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 #daP:hover{
     background: -webkit-linear-gradient(#f0826f, #e65b2f, #c93016, #9f2613, #681b0f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .theme-checkbox {
