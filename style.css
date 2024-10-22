@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 
-:root{
+:root {
     --primary-color: rgba(243, 196, 110, 0.247);
-    --secondary-color:rgba(243, 196, 110, 0.301);
+    --secondary-color: rgba(243, 196, 110, 0.301);
     --tertiary-color: rgba(243, 196, 110, 0.5);
-    --quaternary-color: rgba(0,0,0,0.548);
+    --quaternary-color: rgba(0, 0, 0, 0.548);
     --pentanary-color: black;
     --font-family-primary: 'Kalam', sans-serif;
     --font-family-secondary: 'Yatra One', sans-serif;
 }
 
-.darkTheme{
+.darkTheme {
     --primary-color: rgba(0, 0, 0, 0.774);
-    --secondary-color: rgba(0,0,0,0.301);
-    --tertiary-color: rgba(0,0,0,0.247);
+    --secondary-color: rgba(0, 0, 0, 0.301);
+    --tertiary-color: rgba(0, 0, 0, 0.247);
     --quaternary-color: rgba(243, 196, 110, 1);
     --pentanary-color: white;
     --font-family-primary: 'Kalam', sans-serif;
@@ -25,6 +25,7 @@ body {
     background-color: var(--primary-color);
     margin: 0;
     padding: 0;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out; /* Smooth transition */
 }
 
 header {
@@ -86,7 +87,13 @@ h1 {
     display: flex;
     width: 90px;
     margin-left: 220px;
-    mix-blend-mode: darken;
+}
+
+#picsss {
+    margin-top: -110px;
+    display: flex;
+    width: 90px;
+    margin-left: 220px;
 }
 
 #picsss {
@@ -152,27 +159,57 @@ footer {
     font-weight: bold;
 }
 
-#moon{
-    width:35px;
-    mix-blend-mode: darken;
-}
-#moon:hover{
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.212);
-    transition: all ease .5s;
-}
-#moon{
-    display: block;
-    background: none;
-    border: none;
-    align-items: center;
-    justify-content: center;
-    margin-top: -3%;
-    margin-left: 12px;
-    cursor: pointer;
-}
-
 /* @media screen and (max-width: 600px){
     .daDiv{
         width: 100%;
     }
 } */
+
+.theme-checkbox {
+    --toggle-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 6.25em;
+    height: 3.125em;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 0;
+    transition: 0.4s;
+    border-radius: 99em;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--toggle-size);
+    transform: scale(0.75); /* Make the checkbox smaller */
+    margin-top: 15px; /* Adjust margin as needed */
+    margin-left: 12px;
+}
+
+.theme-checkbox::before {
+    content: "";
+    width: 2.25em;
+    height: 2.25em;
+    position: absolute;
+    top: 0.438em;
+    left: 0.438em;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 100%;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.theme-checkbox:checked::before {
+    left: calc(100% - 2.25em - 0.438em);
+    background-position: 0;
+}
+
+.theme-checkbox:checked {
+    background-position: 100%;
+}
+
+.darkTheme img {
+    mix-blend-mode: normal; /* Prevent image darkening in dark mode */
+    filter: brightness(1) contrast(1); /* Ensure proper contrast*/
+    z-index: 0;
+  }
