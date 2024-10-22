@@ -21,7 +21,7 @@ The following table tracks changes and updates made to Digi आरती over ti
 | v01.02.24(alpha) | Added custom domain; `http://digiaarti.in`                            | FAILED     |
 | v01.03.24(alpha) | Restore to normal; `https://digiaarti.github.io/digiaarti/`          | PASSED     |
 | v02.01.24(beta)  | Removed a Section; Added more Aartis; Correcting Aarti Proof; Added Search Option (optional, will not be added) ; `https://digiaarti/github.io/digiaarti/` | PASSED     |
-| v02.02.00(beta)  | Added dark mode (by [Aman :)](https://github.com/onenonlyaman) ); `https://digiaarti.github.io/digiaarti/` | PASSED     |
+| v02.02.24(beta)  | Added dark mode (by [Aman :)](https://github.com/onenonlyaman) ); `https://digiaarti.github.io/digiaarti/` | PASSED     |
 
 
 ## Versioning Key
