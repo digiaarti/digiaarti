@@ -26,6 +26,8 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out; /* Smooth transition */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 header {
@@ -65,6 +67,8 @@ h1 {
     border-radius: 15px;
     cursor: pointer;
     transition: all ease-in-out 1s;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .daDiv:hover {
@@ -132,12 +136,16 @@ h1 {
 a {
     text-decoration: none;
     color: var(--pentanary-color);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 footer {
     color: var(--pentanary-color);
     font-family: Kalam;
     margin-left: 12px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #daCopy {
@@ -150,6 +158,8 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #daP:hover {
@@ -183,6 +193,8 @@ footer {
     transform: scale(0.75); /* Make the checkbox smaller */
     margin-top: 15px; /* Adjust margin as needed */
     margin-left: 12px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .theme-checkbox::before {
@@ -197,15 +209,21 @@ footer {
     background-position: 100%;
     border-radius: 50%;
     transition: 0.4s;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .theme-checkbox:checked::before {
     left: calc(100% - 2.25em - 0.438em);
     background-position: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .theme-checkbox:checked {
     background-position: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .darkTheme img {
